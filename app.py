@@ -3,7 +3,7 @@ from langchain_groq import ChatGroq
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import FakeEmbeddings
 
 import tempfile
 import os
@@ -17,7 +17,7 @@ st.title("📑 Resume Skill Search Bot (Groq)")
 
 uploaded_files = st.file_uploader("Upload Resumes (PDF)", type="pdf", accept_multiple_files=True)
 
-embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+embeddings = FakeEmbeddings(size=384)
 
 PERSIST_DIR = "chroma_db"
 
