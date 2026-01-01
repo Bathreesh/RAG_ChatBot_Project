@@ -15,4 +15,4 @@ This project is a Retrieval-Augmented Generation (RAG) chatbot that allows users
 - Accurate answers grounded in documents
 
 ## Live Demo
-[(Click here to see Live Demo)](https://ragchatbotproject-3y8ptsjquwm7r47pcwvy6u.streamlit.app/)
+[(Click here to see Live Demo)](https://ragchatbotproject-9xnfqun5iyhsmzynanzrij.streamlit.app/)
